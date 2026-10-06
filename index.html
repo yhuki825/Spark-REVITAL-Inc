@@ -1,0 +1,753 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<!--
+================================================================
+  株式会社Spark REVITAL ブランドサイト デザイン案（9/26ハウススタイル版）
+  コンセプト：「小さな火花を、次の勢いに。」
+    社名の Spark（火花）と REVITAL（revitalize＝再び活気づける）から着想。
+    データ分析にもとづく一つひとつの改善を「火花」と読み、その火花が隣へ、また隣へと
+    燃え移り、LP・SNS・広告のそれぞれに再び勢いが戻っていく――という会社として表現。
+    ・ヒーロー（A：全面のCanvas＋右の縦書きキャッチ＋左下のリード）：暗い画面に眠った熾火（おきび）の点が並び、
+      一つの火花が飛び込むと、触れた点が灯って新しい火花を散らし、連鎖して広がっていく。
+      灯った点は少しずつ温かさを残し、画面全体がだんだん明るく「再起動」していく。
+      画面に触れる（クリック・タップ）と、その場所から火花が生まれる。
+    ・右端のスクロールレール：上から燃え進む導火線。燃えた部分は灰色に、先端で火花が揺れ、「REVITAL 00%」を表示。
+    ・図：ひとつの火花から、LP・SNS・広告の三方向へ火が渡り、外側の輪（再び活気づいた状態）が閉じるSVG。
+    ※所在地・地名など土地から着想した要素、代表者名からの着想は採用していません。
+  書体：Shippori Mincho B1 ＋ Zen Kaku Gothic New ＋ Jost ＋ IBM Plex Mono
+  配色：夜明け前の紫黒 #15121E ／ 灰白 #F0EBE3 ／ 火花の金 #F4B942 ／ 熾火の朱 #E8643C（Canvasのみ）
+  デプロイ：Cloudflare Pages（Direct Upload）にこのファイルをそのままアップロード。
+            ビルド不要。外部依存は Google Fonts と Unsplash 画像のみ。
+
+  ■ 公開前の確認事項（チェックリスト）
+  [ ] 1. 社名の由来（Spark＝火花、REVITAL＝再び活気づける、は本案の解釈）
+  [ ] 2. 代表者の役職名（株式会社のため「代表取締役」と仮置き）
+  [ ] 3. 設立年月日・資本金・従業員数 … 未確認のため会社概要ではコメントアウト
+  [ ] 4. 業種固有の法令：景品表示法（成果の断定・保証表現の禁止／ステルスマーケティング規制）、
+         薬機法・健康増進法（扱う商材による広告規制）、個人情報保護法（分析データの扱い）
+  [ ] 5. 代表メッセージは草案です。ご本人の確認・修正を経て公開してください
+  [ ] 6. 画像はUnsplashのフリー素材（仮）。実際の制作物・業務写真への差し替え推奨
+  [ ] 7. OGP画像・favicon・公開URL
+
+  ▼ 確認事項一覧
+  【確認事項】1. 社名の解釈（Spark＝火花、REVITAL＝再び活気づける）は制作側の想定です。本来の由来があれば差し替えます
+  【確認事項】2. キャッチコピー「小さな火花を、次の勢いに。」・理念文・サービス説明の膨らませた部分・改善の進め方は制作側の文案です
+  【確認事項】3. LP運用・制作サポートの範囲（制作そのものを行うか、運用と改善の支援が中心か）
+  【確認事項】4. SNSの対象媒体、広告の対象媒体（本案では媒体名を記載していません）
+  【確認事項】5. 広告・SNSでのPR表記について景品表示法（ステルスマーケティング規制）への対応方針
+  【確認事項】6. 実績・数値・取引先は未確認のため掲載していません（成果を保証する表現は使っていません）。レールの「%」はページの読み進み具合です
+  【確認事項】7. 設立年月日・資本金・従業員数は未確認のため非表示。郵便番号はCSVの記載から補記
+  【確認事項】8. 代表メッセージは草案。署名欄の氏名は会社概要に記載のため省略しています
+  【確認事項】9. 画像はUnsplashのフリー素材（仮）：1531297484001-80022131f5a1 / 1551288049-bebda4e38f71 /
+         1574717024653-61fd2cf4d44d / 1504384308090-c894fdcc538d
+  ※ご依頼に合わせ、連絡用の窓口エリア・入力フォーム・代表者写真は設けていません。
+================================================================
+-->
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>株式会社Spark REVITAL｜LP運用・SNSブランディング・広告企画のWEBマーケティング</title>
+<meta name="description" content="株式会社Spark REVITALは、データ分析に基づき改善を続けるLP運用・制作サポート、SNSを活用した企業のブランド構築・プロモーション、企業ニーズに合わせた広告企画・マーケティング支援を行うWEBマーケティングの会社です。">
+<meta property="og:title" content="株式会社Spark REVITAL｜小さな火花を、次の勢いに。">
+<meta property="og:description" content="LP運用・制作サポート、SNSを活用したブランド構築・プロモーション、広告企画・マーケティング支援。">
+<meta property="og:type" content="website">
+<meta property="og:locale" content="ja_JP">
+<!-- 【確認事項】og:url / og:image は公開ドメイン確定後に設定 -->
+<meta name="theme-color" content="#15121E">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' fill='%2315121E'/%3E%3Cpath d='M16 4 L18 14 L28 16 L18 18 L16 28 L14 18 L4 16 L14 14Z' fill='%23F4B942'/%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Jost:wght@300;400;500&family=IBM+Plex+Mono:wght@400&family=Shippori+Mincho+B1:wght@500;600;700&family=Zen+Kaku+Gothic+New:wght@400;500;700&display=swap" rel="stylesheet">
+<script>document.documentElement.classList.add('js')</script>
+<style>
+:root{
+  /* 夜明け前の紫黒と、火花の金 */
+  --predawn:#15121E;      /* 基調：夜明け前の紫黒 */
+  --predawn-2:#1D1928;    /* 一段明るい空 */
+  --predawn-deep:#0F0D16; /* フッター */
+  --ash:#F0EBE3;          /* 文字：灰白 */
+  --spark:#F4B942;        /* 差し色：火花の金 */
+  --ember:#E8643C;        /* 第二色：熾火の朱（Canvas・導火線の先だけ） */
+  --base:var(--predawn);--base2:var(--predawn-2);--deep:var(--predawn-deep);
+  --base-rgb:21,18,30;
+  --text:var(--ash);--mute:#9A93A6;--soft:rgba(240,235,227,.8);
+  --accent:var(--spark);--accent-rgb:244,185,66;
+  --line:rgba(240,235,227,.13);--line-strong:rgba(240,235,227,.3);
+  --paper:#F1ECE4;--ink:#1E1A27;--ink-rgb:30,26,39;--ink-mute:#686172;--accent-ink:#A6720E;
+  --fallback:radial-gradient(circle at 30% 40%,rgba(244,185,66,.25) 0 1.5px,transparent 2px) 0 0/34px 34px,radial-gradient(circle at 70% 70%,rgba(232,100,60,.2) 0 1px,transparent 1.5px) 0 0/22px 22px,linear-gradient(135deg,#1D1928,#0F0D16);
+  --serif:"Shippori Mincho B1","Hiragino Mincho ProN","Yu Mincho",serif;
+  --sans:"Zen Kaku Gothic New","Hiragino Sans","Yu Gothic",sans-serif;
+  --latin:"Jost","Helvetica Neue",Arial,sans-serif;
+  --mono:"IBM Plex Mono",ui-monospace,Menlo,monospace;
+  --header-h:72px;
+}
+*,*::before,*::after{box-sizing:border-box}
+html{scroll-behavior:smooth;scroll-padding-top:calc(var(--header-h) + env(safe-area-inset-top,0px));-webkit-text-size-adjust:100%}
+body{margin:0;background:var(--base);color:var(--text);font-family:var(--sans);font-size:16px;line-height:1.9;letter-spacing:.04em;word-break:auto-phrase;text-wrap:pretty;-webkit-font-smoothing:antialiased;overflow-x:hidden}
+img{max-width:100%;display:block}
+a{color:inherit}
+.nw{display:inline-block}
+:focus-visible{outline:2px solid var(--accent);outline-offset:3px;border-radius:2px}
+.skip{position:fixed;left:12px;top:-60px;z-index:200;background:var(--accent);color:var(--base);padding:10px 16px;text-decoration:none;font-weight:700;transition:top .2s}
+.skip:focus{top:calc(12px + env(safe-area-inset-top,0px))}
+.wrap{width:min(1160px,100% - 48px);margin:0 auto}
+.sec{padding:clamp(96px,14vw,180px) 0;position:relative}
+.alt{background:var(--base2);--sec-bg:var(--base2)}
+.deep{background:var(--deep);--sec-bg:var(--deep)}
+.paper{background:var(--paper);color:var(--ink);--text:var(--ink);--line:rgba(var(--ink-rgb),.16);--line-strong:rgba(var(--ink-rgb),.5);--mute:var(--ink-mute);--soft:rgba(var(--ink-rgb),.82);--sec-bg:var(--paper);--accent:var(--accent-ink)}
+p{margin:0 0 1.3em}
+
+/* header */
+.header{position:fixed;inset:0 0 auto 0;z-index:100;padding-top:env(safe-area-inset-top,0px);border-bottom:1px solid transparent;transition:background .4s,border-color .4s,backdrop-filter .4s,padding .4s}
+.header.is-scrolled{background:rgba(var(--base-rgb),.86);backdrop-filter:blur(12px);-webkit-backdrop-filter:blur(12px);border-color:var(--line)}
+.header-in{height:var(--header-h);display:flex;align-items:center;justify-content:space-between;gap:20px;padding:0 clamp(20px,4vw,56px);max-width:1440px;margin:0 auto}
+.logo{display:flex;align-items:center;gap:12px;text-decoration:none;min-width:0}
+.logo svg{flex:none}
+.logo__t{display:flex;flex-direction:column;line-height:1.15}
+.logo__t b{font-family:var(--latin);font-weight:300;font-size:20px;letter-spacing:.14em}
+.logo__t b span{font-weight:500;color:var(--accent)}
+.logo__t small{font-size:10.5px;color:var(--mute);letter-spacing:.16em}
+.gnav ul{list-style:none;margin:0;padding:0;display:flex;gap:clamp(16px,2.2vw,34px)}
+.gnav a{position:relative;display:block;padding:6px 0;text-decoration:none;font-size:13px;letter-spacing:.12em}
+.gnav a::after{content:"";position:absolute;left:0;right:0;bottom:0;height:1px;background:linear-gradient(90deg,var(--ember),var(--spark));transform:scaleX(0);transform-origin:left;transition:transform .35s}
+.gnav a:hover::after,.gnav a:focus-visible::after{transform:scaleX(1)}
+.menu-btn{display:none;background:none;border:0;color:var(--text);width:44px;height:44px;cursor:pointer;position:relative;flex:none}
+.menu-btn span{position:absolute;left:11px;right:11px;height:1.5px;background:currentColor;transition:transform .3s,opacity .3s}
+.menu-btn span:nth-child(1){top:16px}.menu-btn span:nth-child(2){top:22px;background:var(--accent)}.menu-btn span:nth-child(3){top:28px}
+.menu-btn[aria-expanded="true"] span:nth-child(1){transform:translateY(6px) rotate(45deg)}
+.menu-btn[aria-expanded="true"] span:nth-child(2){opacity:0}
+.menu-btn[aria-expanded="true"] span:nth-child(3){transform:translateY(-6px) rotate(-45deg)}
+@media (max-width:900px){
+ :root{--header-h:64px}
+ .menu-btn{display:block;z-index:120}
+ .gnav{position:fixed;inset:0;background:rgba(var(--base-rgb),.97);display:grid;place-items:center;opacity:0;visibility:hidden;transition:opacity .35s,visibility .35s;padding:env(safe-area-inset-top,0px) 24px env(safe-area-inset-bottom,0px)}
+ .gnav.is-open{opacity:1;visibility:visible}
+ .gnav ul{flex-direction:column;align-items:center;gap:26px}
+ .gnav a{font-family:var(--serif);font-size:20px;letter-spacing:.14em}
+}
+
+/* hero : A field + vertical catch right + lead bottom-left */
+.hero{position:relative;min-height:100vh;min-height:100svh;overflow:hidden;display:grid;grid-template-columns:minmax(0,1fr) auto;background:radial-gradient(120% 90% at 80% 10%,#241E33 0%,var(--base) 60%)}
+.hero canvas{position:absolute;inset:0;width:100%;height:100%;display:block;cursor:crosshair}
+.hero__veil{position:absolute;inset:0;pointer-events:none;background:linear-gradient(180deg,rgba(21,18,30,.4) 0%,transparent 30%,transparent 62%,rgba(21,18,30,.88) 100%)}
+.hero__lead-wrap{position:relative;z-index:2;align-self:end;padding:0 0 clamp(52px,9vh,96px) clamp(20px,5vw,72px);max-width:34em;pointer-events:none}
+.hero__lead-wrap a{pointer-events:auto}
+.hero__en{font-family:var(--latin);font-weight:300;font-size:13px;letter-spacing:.32em;text-transform:uppercase;color:var(--accent);margin:0 0 16px}
+.hero__lead{font-size:15px;color:var(--soft);margin:0 0 22px}
+.hero__lead strong{font-weight:500;color:#fff}
+.hero__svc{list-style:none;margin:0;padding:0;display:flex;flex-wrap:wrap;gap:8px 20px;font-size:13px;letter-spacing:.1em}
+.hero__svc a{text-decoration:none;display:flex;align-items:center;gap:8px;padding:4px 0;border-bottom:1px solid var(--line-strong);transition:border-color .3s}
+.hero__svc a:hover{border-color:var(--accent)}
+.hero__svc a::before{content:"";width:7px;height:7px;background:var(--accent);clip-path:polygon(50% 0,62% 38%,100% 50%,62% 62%,50% 100%,38% 62%,0 50%,38% 38%)}
+.hero__hint{margin:20px 0 0;font-family:var(--mono);font-size:11px;letter-spacing:.08em;color:var(--mute)}
+.hero h1{position:relative;z-index:2;align-self:start;writing-mode:vertical-rl;font-family:var(--serif);font-weight:600;font-size:clamp(36px,4.6vw,64px);line-height:1.6;letter-spacing:.22em;margin:calc(var(--header-h) + 64px + env(safe-area-inset-top,0px)) clamp(52px,7vw,120px) 0 0;pointer-events:none;text-shadow:0 2px 22px rgba(15,13,22,.6)}
+.hero h1 span{display:block}
+.hero h1 span+span{padding-top:3em}
+.js .hero [data-in]{opacity:0;transform:translateY(14px);transition:opacity 1.1s ease,transform 1.1s ease}
+.js .hero h1 span[data-in]{transform:translateY(-14px)}
+.is-loaded .hero [data-in]{opacity:1;transform:none}
+.is-loaded .hero [data-in="2"]{transition-delay:.35s}
+.is-loaded .hero [data-in="3"]{transition-delay:.9s}
+.is-loaded .hero [data-in="4"]{transition-delay:1.3s}
+.scroll-cue{position:absolute;z-index:2;left:50%;bottom:26px;width:1px;height:54px;background:rgba(240,235,227,.2);overflow:hidden;font-size:0}
+.scroll-cue::after{content:"";position:absolute;left:0;top:-40%;width:1px;height:40%;background:var(--accent);animation:drop 2.4s ease-in-out infinite}
+@keyframes drop{to{top:100%}}
+@media (max-width:900px){
+ .hero{grid-template-columns:minmax(0,1fr);align-content:space-between}
+ .hero h1{order:-1;writing-mode:horizontal-tb;font-size:clamp(30px,8.6vw,42px);letter-spacing:.1em;line-height:1.55;margin:0;padding:calc(var(--header-h) + 40px + env(safe-area-inset-top,0px)) clamp(20px,5vw,72px) 0}
+ .hero h1 span+span{padding-top:0;padding-left:1.2em}
+ .hero__lead-wrap{padding-right:clamp(20px,5vw,72px)}
+ .scroll-cue{display:none}
+}
+
+/* heading : H5 JA + spark glyph */
+.sh{margin:0 0 clamp(40px,6vw,72px)}
+.sh h2{display:flex;align-items:center;gap:.5em;font-family:var(--serif);font-weight:600;font-size:clamp(25px,3vw,38px);line-height:1.55;letter-spacing:.1em;margin:0}
+.sh h2::before{content:"";flex:none;width:.55em;height:.55em;background:var(--accent);clip-path:polygon(50% 0,60% 40%,100% 50%,60% 60%,50% 100%,40% 60%,0 50%,40% 40%)}
+.sh__sub{margin:12px 0 0;color:var(--mute);font-size:14.5px;max-width:36em}
+
+/* reveal */
+.js .reveal{opacity:0;transform:translateY(20px);transition:opacity 1s cubic-bezier(.22,.8,.24,1),transform 1s cubic-bezier(.22,.8,.24,1)}
+.js .reveal.is-in{opacity:1;transform:none}
+
+/* photos */
+.ph{position:relative;overflow:hidden;margin:0;background:linear-gradient(135deg,var(--base2),var(--deep))}
+.ph img{width:100%;height:100%;object-fit:cover;filter:saturate(.7) contrast(1.05) brightness(.92)}
+.ph.is-fallback{background:var(--fallback)}
+
+/* concept */
+.concept-grid{display:grid;grid-template-columns:minmax(0,1.05fr) minmax(0,1fr);gap:clamp(40px,7vw,110px);align-items:center}
+.concept-text p{max-width:30em;color:var(--soft)}
+.dict{margin:0 0 30px;padding:22px 0;border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+.dict div+div{margin-top:16px}
+.dict dt{font-family:var(--latin);font-weight:300;font-size:30px;letter-spacing:.08em;line-height:1.2}
+.dict dt small{font-family:var(--mono);font-size:12px;color:var(--mute);letter-spacing:.04em;margin-left:12px}
+.dict dd{margin:4px 0 0;font-size:14.5px;color:var(--soft)}
+.dict dd b{font-weight:500;color:var(--accent)}
+.fig{margin:0}
+.fig svg{display:block;width:100%;height:auto;max-width:480px;margin:0 auto;overflow:visible}
+.fig figcaption{margin-top:16px;text-align:center;font-size:13px;color:var(--mute);letter-spacing:.08em}
+.fig .ln{fill:none;stroke:var(--accent);stroke-width:1.3;stroke-linecap:round;stroke-dasharray:1;stroke-dashoffset:1;transition:stroke-dashoffset 1.4s cubic-bezier(.6,0,.2,1) .5s}
+.fig .ln.d2{transition-delay:.8s}.fig .ln.d3{transition-delay:1.1s}
+.fig .ring{stroke-width:1.1;transition-duration:2.4s;transition-delay:1.8s}
+.fig .soft{fill:none;stroke:var(--line-strong);stroke-width:1;stroke-dasharray:2 6}
+.fig .star{fill:var(--accent);opacity:0;transform-box:fill-box;transform-origin:center;transform:scale(.2) rotate(-45deg);transition:opacity .6s,transform .8s cubic-bezier(.3,1.6,.5,1)}
+.fig .star.s0{transition-delay:.1s}.fig .star.s1{transition-delay:1.6s}.fig .star.s2{transition-delay:1.9s}.fig .star.s3{transition-delay:2.2s}
+.fig .lbl{fill:currentColor;font-family:var(--serif);font-size:16px;letter-spacing:.14em;opacity:0;transition:opacity 1s 2s}
+.fig .lbl-s{fill:var(--mute);font-family:var(--latin);font-size:11px;letter-spacing:.24em;opacity:0;transition:opacity 1s 2.2s}
+.fig .lbl-r{fill:var(--accent);font-family:var(--latin);font-weight:300;font-size:13px;letter-spacing:.5em;opacity:0;transition:opacity 1s 3.6s}
+.fig.is-in .ln{stroke-dashoffset:0}
+.fig.is-in .star{opacity:1;transform:none}
+.fig.is-in .lbl,.fig.is-in .lbl-s,.fig.is-in .lbl-r{opacity:1}
+@media (max-width:900px){.concept-grid{grid-template-columns:minmax(0,1fr)}}
+
+/* band */
+.band{position:relative;height:clamp(260px,42vw,520px);overflow:hidden;margin:0;background:var(--fallback)}
+.band img{position:absolute;left:0;top:-9%;width:100%;height:118%;object-fit:cover;filter:saturate(.7) brightness(.6);will-change:transform}
+.band figcaption{position:absolute;inset:0;display:grid;place-items:center;text-align:center;padding:0 24px;font-family:var(--serif);font-size:clamp(19px,2.2vw,27px);letter-spacing:.18em;line-height:1.9;color:#fff;text-shadow:0 2px 18px rgba(0,0,0,.6)}
+
+/* business */
+.biz{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1.05fr);gap:clamp(32px,6vw,88px);align-items:center}
+.biz+.biz{margin-top:clamp(72px,10vw,128px)}
+.biz:nth-of-type(even) .biz__media{order:2}
+.biz__media{aspect-ratio:4/3;border-radius:2px 2px 2px 2px}
+.biz__media::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,transparent 52%,rgba(21,18,30,.5));pointer-events:none}
+/* 画像自体を clip すると Chrome の lazy 読み込みが始まらないため、幕（::before）を開ける */
+.biz__media::before{content:"";position:absolute;inset:0;background:inherit;transform-origin:50% 100%;transition:transform 1.4s cubic-bezier(.6,0,.2,1) .25s;pointer-events:none}
+.biz__media img{transition:transform 1.6s cubic-bezier(.22,.7,.2,1) .25s}
+.js .biz__media img{transform:scale(1.12)}
+.biz__media::before{transform:scaleY(0)}
+.js .biz__media::before{transform:none}
+.js .biz.is-in .biz__media:is(.is-loaded,.is-fallback)::before{transform:scaleY(0)}
+.js .biz.is-in .biz__media.is-loaded img{transform:none}
+.js .biz.is-in .biz__media.is-loaded:hover img{transform:scale(1.04);transition-delay:0s}
+.biz__kind{display:inline-block;margin:0 0 14px;font-family:var(--latin);font-size:12px;letter-spacing:.24em;text-transform:uppercase;color:var(--accent);padding:3px 12px;border:1px solid rgba(244,185,66,.5);border-radius:999px}
+.biz h3{font-family:var(--serif);font-weight:600;font-size:clamp(22px,2.4vw,30px);line-height:1.6;letter-spacing:.08em;margin:0 0 18px}
+.biz p{color:var(--soft);max-width:30em}
+.tags{list-style:none;margin:0;padding:0;display:flex;flex-wrap:wrap;gap:8px}
+.tags li{font-size:12.5px;letter-spacing:.08em;padding:4px 13px;border:1px solid var(--line-strong);border-radius:999px}
+.note{font-size:13px;color:var(--mute);margin:18px 0 0}
+@media (max-width:900px){.biz{grid-template-columns:minmax(0,1fr)}.biz:nth-of-type(even) .biz__media{order:0}}
+
+/* steps */
+.steps{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:clamp(16px,2.4vw,32px);position:relative}
+.steps::before{content:"";position:absolute;left:0;right:0;top:11px;height:1px;background:var(--line)}
+.steps::after{content:"";position:absolute;left:0;top:11px;height:1px;width:100%;background:linear-gradient(90deg,var(--ember),var(--spark));transform:scaleX(0);transform-origin:left;transition:transform 2.4s cubic-bezier(.6,.1,.2,1)}
+.steps.is-in::after{transform:scaleX(1)}
+.step{position:relative;padding-top:46px}
+.step__dot{position:absolute;left:0;top:0;width:23px;height:23px;border-radius:50%;border:1px solid var(--mute);background:var(--sec-bg,var(--base));display:grid;place-items:center}
+.step__dot::after{content:"";width:13px;height:13px;background:var(--accent);clip-path:polygon(50% 0,62% 38%,100% 50%,62% 62%,50% 100%,38% 62%,0 50%,38% 38%);transform:scale(0) rotate(-90deg);transition:transform .6s cubic-bezier(.3,1.6,.5,1) var(--d,0s)}
+.steps.is-in .step__dot::after{transform:none}
+.step__no{font-family:var(--mono);font-size:13px;color:var(--accent);letter-spacing:.12em}
+.step h3{font-family:var(--serif);font-weight:600;font-size:21px;letter-spacing:.14em;margin:6px 0 10px}
+.step p{font-size:14.5px;margin:0;color:var(--soft)}
+.loop{display:flex;align-items:center;gap:14px;margin:52px 0 0;color:var(--mute);font-size:14px}
+.loop svg{flex:none}
+@media (max-width:900px){
+ .steps{grid-template-columns:minmax(0,1fr);gap:0;padding-left:42px}
+ .steps::before,.steps::after{left:11px;right:auto;top:10px;bottom:10px;width:1px;height:auto}
+ .steps::after{transform:scaleY(0);transform-origin:top;background:linear-gradient(180deg,var(--ember),var(--spark))}
+ .steps.is-in::after{transform:scaleY(1)}
+ .step{padding:0 0 36px}
+ .step__dot{left:-42px}
+}
+
+/* values */
+.values{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:repeat(3,minmax(0,1fr))}
+.values li{padding:8px clamp(18px,3vw,40px);border-left:1px solid var(--line)}
+.values li:first-child{border-left:0;padding-left:0}
+.values h3{font-family:var(--serif);font-weight:600;font-size:20px;letter-spacing:.12em;margin:0 0 12px;line-height:1.6}
+.values h3 i{display:block;font-style:normal;font-family:var(--latin);font-weight:300;font-size:30px;letter-spacing:.06em;color:var(--accent);margin-bottom:8px;line-height:1}
+.values p{margin:0;font-size:14.5px;color:var(--soft)}
+@media (max-width:860px){.values{grid-template-columns:minmax(0,1fr)}.values li{border-left:0;border-top:1px solid var(--line);padding:24px 0}.values li:first-child{border-top:0;padding-top:0}}
+
+/* message */
+.msg-sec{overflow:hidden}
+.msg-sec::before{content:"";position:absolute;left:50%;bottom:-30%;width:120%;height:90%;transform:translateX(-50%);background:radial-gradient(closest-side,rgba(244,185,66,.12),rgba(232,100,60,.05) 55%,transparent);pointer-events:none}
+.msg{position:relative;display:flex;flex-direction:row-reverse;gap:clamp(40px,6vw,96px);justify-content:center;align-items:flex-start}
+.msg__title{writing-mode:vertical-rl;font-family:var(--serif);font-weight:600;font-size:clamp(28px,3vw,40px);letter-spacing:.2em;line-height:1.7;margin:0;flex:none}
+.msg__body{writing-mode:vertical-rl;font-family:var(--serif);font-size:16.5px;line-height:2.3;letter-spacing:.14em;height:30em;max-width:100%;overflow-x:auto;overflow-y:hidden}
+.msg__body p{margin:0 0 0 1.5em}
+.msg__body .first{font-size:1.25em}
+.msg__sign{margin-top:auto!important;text-align:end;font-family:var(--sans)}
+.msg__sign small{display:block;font-size:13px;color:var(--mute);letter-spacing:.2em}
+.msg__sign strong{font-family:var(--serif);font-weight:600;font-size:20px;letter-spacing:.3em}
+@media (max-width:900px){
+ .msg{flex-direction:column;gap:32px}
+ .msg__title,.msg__body{writing-mode:horizontal-tb;height:auto}
+ .msg__body{line-height:2.1;letter-spacing:.06em;overflow:visible}
+ .msg__body p{margin:0 0 1.4em}
+ .msg__sign{text-align:right}
+}
+
+/* company (paper) */
+.company-grid{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1.7fr);gap:clamp(32px,6vw,96px);align-items:start}
+.profile{width:100%;border-collapse:collapse;font-size:15px}
+.profile th,.profile td{text-align:left;vertical-align:top;padding:22px 0;border-bottom:1px solid var(--line);font-weight:400}
+.profile tr:first-child th,.profile tr:first-child td{border-top:1px solid var(--line-strong)}
+.profile th{width:9em;color:var(--mute);font-size:14px;letter-spacing:.14em;padding-right:24px}
+.profile ul{margin:0;padding:0;list-style:none}
+.profile li{position:relative;padding-left:1.3em}
+.profile li+li{margin-top:.3em}
+.profile li::before{content:"";position:absolute;left:0;top:.55em;width:10px;height:10px;background:var(--accent);clip-path:polygon(50% 0,62% 38%,100% 50%,62% 62%,50% 100%,38% 62%,0 50%,38% 38%)}
+@media (max-width:900px){.company-grid{grid-template-columns:minmax(0,1fr)}}
+@media (max-width:640px){
+ .profile th,.profile td{display:block;width:auto;padding:0}
+ .profile th{padding-top:20px;border-bottom:0}
+ .profile td{padding:4px 0 20px}
+ .profile tr:first-child td{border-top:0}
+}
+
+/* footer */
+.footer{background:var(--deep);border-top:1px solid var(--line);padding:clamp(56px,8vw,80px) 0 calc(40px + env(safe-area-inset-bottom,0px))}
+.footer-in{display:flex;justify-content:space-between;align-items:flex-end;flex-wrap:wrap;gap:32px}
+.footer-tag{margin:18px 0 0;font-family:var(--serif);font-size:clamp(15px,1.6vw,19px);letter-spacing:.18em}
+.footer-nav ul{list-style:none;margin:0;padding:0;display:flex;flex-wrap:wrap;gap:10px 26px}
+.footer-nav a{text-decoration:none;font-size:13px;color:var(--mute);letter-spacing:.1em;transition:color .3s}
+.footer-nav a:hover{color:var(--text)}
+.copy{width:100%;margin:36px 0 0;font-family:var(--latin);font-weight:300;font-size:12.5px;color:var(--mute);letter-spacing:.12em}
+
+/* rail : 導火線 */
+.rail{position:fixed;right:clamp(10px,1.6vw,24px);top:50%;transform:translateY(-50%);height:min(56vh,500px);width:20px;z-index:90;pointer-events:none}
+.rail__fuse{position:absolute;left:9px;top:0;bottom:0;width:2px;background:repeating-linear-gradient(180deg,rgba(244,185,66,.55) 0 5px,rgba(244,185,66,.15) 5px 8px)}
+.rail__ash{position:absolute;left:9px;top:0;width:2px;height:100%;background:rgba(154,147,166,.35);transform-origin:top;transform:scaleY(0)}
+.rail__knot{position:absolute;left:6px;width:8px;height:3px;margin-top:-1.5px;border-radius:2px;background:rgba(244,185,66,.5)}
+.rail__knot.is-passed{background:rgba(154,147,166,.45)}
+.rail__head{position:absolute;left:10px;top:0;width:22px;height:22px;transform:translate(-50%,-50%)}
+.rail__head::before{content:"";position:absolute;inset:-8px;border-radius:50%;background:radial-gradient(closest-side,rgba(244,185,66,.55),rgba(232,100,60,.18) 60%,transparent);animation:flicker 1.1s steps(3,end) infinite}
+.rail__head svg{position:relative;width:100%;height:100%;fill:var(--spark);animation:spin 3s linear infinite}
+@keyframes flicker{0%{opacity:.6;transform:scale(.9)}50%{opacity:1;transform:scale(1.15)}100%{opacity:.75;transform:scale(1)}}
+@keyframes spin{to{transform:rotate(360deg)}}
+.rail__read{position:absolute;right:24px;top:0;transform:translateY(-50%);font-family:var(--mono);font-size:11px;color:var(--mute);writing-mode:vertical-rl;letter-spacing:.12em;white-space:nowrap}
+.rail.on-light .rail__ash{background:rgba(30,26,39,.3)}
+.rail.on-light .rail__read{color:var(--ink-mute)}
+@media (max-width:900px){.rail{right:4px;height:38vh}.rail__read{display:none}.rail__head{width:16px;height:16px}}
+
+@media (prefers-reduced-motion:reduce){
+ html{scroll-behavior:auto}
+ *,*::before,*::after{animation:none!important;transition:none!important}
+ .js .reveal,.js .hero [data-in]{opacity:1;transform:none}
+ .fig .ln{stroke-dashoffset:0}.fig .star,.fig .lbl,.fig .lbl-s,.fig .lbl-r{opacity:1;transform:none}
+ .steps::after{transform:none}.step__dot::after{transform:none}
+ .js .biz__media img{transform:none}.js .biz__media::before{transform:scaleY(0)}
+ .band img{transform:none!important}
+ .hero__hint{display:none}
+}
+</style>
+</head>
+<body>
+<a class="skip" href="#main">本文へスキップ</a>
+
+<header class="header" id="header">
+  <div class="header-in">
+    <!-- 【確認事項】ロゴは火花の記号と社名の文字組みによる仮ロゴです -->
+    <a class="logo" href="#top" aria-label="株式会社Spark REVITAL トップへ"><svg width="26" height="26" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 1 L13.7 10.3 L23 12 L13.7 13.7 L12 23 L10.3 13.7 L1 12 L10.3 10.3Z" fill="#F4B942"/><circle cx="19" cy="5" r="1.3" fill="#E8643C"/></svg><span class="logo__t"><b><span>Spark</span> REVITAL</b><small>株式会社Spark REVITAL</small></span></a>
+    <button class="menu-btn" id="menuBtn" type="button" aria-controls="gnav" aria-expanded="false" aria-label="メニューを開く"><span></span><span></span><span></span></button>
+    <nav class="gnav" id="gnav" aria-label="メインメニュー">
+      <ul>
+      <li><a href="#concept">社名のこと</a></li>
+      <li><a href="#business">事業内容</a></li>
+      <li><a href="#process">改善の進め方</a></li>
+      <li><a href="#values">大切にしていること</a></li>
+      <li><a href="#message">代表メッセージ</a></li>
+      <li><a href="#company">会社概要</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<div class="rail" id="rail" aria-hidden="true">
+  <div class="rail__fuse"></div>
+  <div class="rail__ash" id="railAsh"></div>
+  <span class="rail__head" id="railHead"><svg viewBox="0 0 24 24"><path d="M12 1 L13.7 10.3 L23 12 L13.7 13.7 L12 23 L10.3 13.7 L1 12 L10.3 10.3Z"/></svg></span>
+  <span class="rail__read" id="railRead">REVITAL 00%</span>
+</div>
+
+<main id="main">
+<!-- ===== Hero（A：火花が連鎖するCanvas） ===== -->
+<section class="hero" id="top" data-rail aria-labelledby="heroTitle">
+  <canvas id="heroCanvas" aria-hidden="true"></canvas>
+  <div class="hero__veil" aria-hidden="true"></div>
+  <div class="hero__lead-wrap" data-in="3">
+    <p class="hero__en" lang="en">Web marketing, reignited</p>
+    <p class="hero__lead"><strong>株式会社Spark REVITAL</strong>は、データ分析に基づくLP運用・制作サポート、<span class="nw">SNSを活用したブランド構築・プロモーション、</span><span class="nw">広告企画・マーケティング支援を行う</span><span class="nw">WEBマーケティングの会社です。</span></p>
+    <ul class="hero__svc" aria-label="三つのサービス">
+      <li><a href="#biz1">LP運用・制作サポート</a></li>
+      <li><a href="#biz2">SNSブランド構築</a></li>
+      <li><a href="#biz3">広告企画・支援</a></li>
+    </ul>
+    <!-- <p class="hero__hint" aria-hidden="true">画面に触れると、火花が生まれます。</p> -->
+  </div>
+  <!-- 【確認事項】キャッチコピーは制作側の文案です -->
+  <h1 id="heroTitle"><span data-in="1">小さな火花を、</span><span data-in="2">次の勢いに。</span></h1>
+  <a class="scroll-cue" href="#concept">スクロール</a>
+</section>
+
+<!-- ===== Concept ===== -->
+<section class="sec" id="concept" data-rail aria-labelledby="conceptTitle">
+  <div class="wrap concept-grid">
+    <div class="concept-text reveal">
+      <div class="sh"><h2 id="conceptTitle">大きな一発より、<br>確かな火花を。</h2></div>
+      <!-- 【確認事項】社名の由来は未確認。以下は本案の解釈として書いています -->
+      <dl class="dict">
+        <div><dt lang="en">Spark<small>/spɑːrk/</small></dt><dd>火花。データから見つける、<b>小さな改善のきっかけ</b>。</dd></div>
+        <div><dt lang="en">REVITAL<small>revitalize</small></dt><dd>再び活気づける。改善の積み重ねで、<b>ブランドに勢いを取り戻す</b>こと。</dd></div>
+      </dl>
+      <p>私たちは社名を、そう読んでいます。Webマーケティングの成果は、一度の施策で決まるものではありません。数字を見て、仮説を立て、少しずつ手を入れる。</p>
+      <p>その小さな火花が、LPからSNSへ、SNSから広告へと燃え移っていくとき、ブランドはもう一度、勢いを取り戻すと考えています。</p>
+    </div>
+    <figure class="fig reveal" data-draw>
+      <svg viewBox="0 0 420 420" role="img" aria-labelledby="figT figD">
+        <title id="figT">火花が三方向へ渡り、輪が閉じる図</title>
+        <desc id="figD">中心の小さな火花から、LP・SNS・広告の三方向へ線が伸びて火が灯り、最後に三つを囲む外側の輪が閉じて「REVITAL」と記される図。</desc>
+        <circle class="soft" cx="210" cy="210" r="150"/>
+        <path class="ln" pathLength="1" d="M210 210 L210 70"/>
+        <path class="ln d2" pathLength="1" d="M210 210 L331 280"/>
+        <path class="ln d3" pathLength="1" d="M210 210 L89 280"/>
+        <circle class="ln ring" pathLength="1" cx="210" cy="210" r="150" transform="rotate(-90 210 210)"/>
+        <path class="star s0" d="M210 192 L214 206 L228 210 L214 214 L210 228 L206 214 L192 210 L206 206Z"/>
+        <path class="star s1" d="M210 58 L213 67 L222 70 L213 73 L210 82 L207 73 L198 70 L207 67Z"/>
+        <path class="star s2" d="M331 268 L334 277 L343 280 L334 283 L331 292 L328 283 L319 280 L328 277Z"/>
+        <path class="star s3" d="M89 268 L92 277 L101 280 L92 283 L89 292 L86 283 L77 280 L86 277Z"/>
+        <text class="lbl" x="210" y="26" text-anchor="middle">LP</text>
+        <text class="lbl-s" x="210" y="44" text-anchor="middle">operation</text>
+        <text class="lbl" x="324" y="324">SNS</text>
+        <text class="lbl-s" x="324" y="342">branding</text>
+        <text class="lbl" x="96" y="324" text-anchor="end">広告</text>
+        <text class="lbl-s" x="96" y="342" text-anchor="end">planning</text>
+        <text class="lbl-r" x="210" y="404" text-anchor="middle">REVITAL</text>
+      </svg>
+      <figcaption>ひとつの改善が、隣の施策に燃え移っていく。</figcaption>
+    </figure>
+  </div>
+</section>
+
+<figure class="band">
+  <!-- 画像：Unsplash（仮）1531297484001-80022131f5a1 差し替え推奨 -->
+  <img src="https://images.unsplash.com/photo-1531297484001-80022131f5a1?auto=format&amp;fit=crop&amp;w=2000&amp;q=72" alt="" aria-hidden="true" loading="lazy" decoding="async" onerror="this.parentNode.classList.add('is-fallback');this.remove()">
+  <!-- 【確認事項】写真帯の一文は制作側の文案です -->
+  <figcaption>数字の中に、<br>次の火種がある。</figcaption>
+</figure>
+
+<!-- ===== Business ===== -->
+<section class="sec" id="business" data-rail aria-labelledby="bizTitle">
+  <div class="wrap">
+    <div class="sh"><h2 id="bizTitle">事業内容</h2><p class="sh__sub">WEBマーケティング。三つの領域で、データに基づく改善を続けます。</p></div>
+    <!-- 【確認事項】各サービスの説明・タグは制作側の文案です。実際の提供範囲に合わせて修正してください -->
+    <article class="biz reveal" aria-labelledby="biz1">
+      <figure class="biz__media ph">
+        <!-- 画像：Unsplash（仮）1551288049-bebda4e38f71 -->
+        <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&amp;fit=crop&amp;w=1400&amp;q=72" alt="アクセス解析のグラフを表示した画面" loading="lazy" decoding="async" onerror="this.parentNode.classList.add('is-fallback');this.remove()">
+      </figure>
+      <div>
+        <p class="biz__kind" lang="en">LP operation</p>
+        <h3 id="biz1">LP運用・制作サポート</h3>
+        <p>データ分析に基づき、改善を続けるLPの運用と制作をサポートします。公開して終わりにせず、数字の変化を見ながら、より伝わるページへ育てていきます。</p>
+        <ul class="tags"><li>データ分析</li><li>継続的な改善</li><li>制作サポート</li></ul>
+      </div>
+    </article>
+    <article class="biz reveal" aria-labelledby="biz2">
+      <figure class="biz__media ph">
+        <!-- 画像：Unsplash（仮）1574717024653-61fd2cf4d44d -->
+        <img src="https://images.unsplash.com/photo-1574717024653-61fd2cf4d44d?auto=format&amp;fit=crop&amp;w=1400&amp;q=72" alt="SNSで発信する動画を編集している画面" loading="lazy" decoding="async" onerror="this.parentNode.classList.add('is-fallback');this.remove()">
+      </figure>
+      <div>
+        <p class="biz__kind" lang="en">SNS branding</p>
+        <h3 id="biz2">SNSを活用した<br>ブランド構築・プロモーション</h3>
+        <p>SNSを通じて、企業らしさが伝わるブランドを築き、プロモーションにつなげます。日々の発信を積み重ね、ファンとの関係を育てます。</p>
+        <ul class="tags"><li>ブランド構築</li><li>プロモーション</li><li>SNS活用</li></ul>
+        <!-- 【確認事項】ステルスマーケティング規制への対応方針の記載可否 -->
+        <p class="note">※PRを含む発信では、広告であることが分かる表示を行います。</p>
+      </div>
+    </article>
+    <article class="biz reveal" aria-labelledby="biz3">
+      <figure class="biz__media ph">
+        <!-- 画像：Unsplash（仮）1504384308090-c894fdcc538d -->
+        <img src="https://images.unsplash.com/photo-1504384308090-c894fdcc538d?auto=format&amp;fit=crop&amp;w=1400&amp;q=72" alt="パソコンが並ぶオフィスで働く人たち" loading="lazy" decoding="async" onerror="this.parentNode.classList.add('is-fallback');this.remove()">
+      </figure>
+      <div>
+        <p class="biz__kind" lang="en">Ad planning</p>
+        <h3 id="biz3">広告企画・<br>マーケティング支援</h3>
+        <p>企業ごとのニーズに合わせて、広告を企画し、マーケティング全体を支援します。目的に合った打ち手を、一緒に考えます。</p>
+        <ul class="tags"><li>広告企画</li><li>マーケティング支援</li><li>ニーズに合わせた設計</li></ul>
+      </div>
+    </article>
+  </div>
+</section>
+
+<!-- ===== Process ===== -->
+<section class="sec alt" id="process" data-rail aria-labelledby="procTitle">
+  <div class="wrap">
+    <div class="sh"><h2 id="procTitle">火花を、絶やさない進め方。</h2><p class="sh__sub">LPやSNS、広告の数字から、改善のきっかけを見つけ続けます。</p></div>
+    <!-- 【確認事項】サイクルの4段階は制作側の想定です。順序のある工程のため番号を使用 -->
+    <ol class="steps reveal" data-draw>
+      <li class="step"><span class="step__dot" aria-hidden="true"></span><span class="step__no">01</span><h3>分析する</h3><p>LPやSNS、広告の数字を確かめ、いまの状態を正しく知ります。</p></li>
+      <li class="step" style="--d:.6s"><span class="step__dot" aria-hidden="true"></span><span class="step__no">02</span><h3>仮説を立てる</h3><p>どこを変えればより伝わるのか、改善の手がかりを考えます。</p></li>
+      <li class="step" style="--d:1.2s"><span class="step__dot" aria-hidden="true"></span><span class="step__no">03</span><h3>改善する</h3><p>ページや発信、広告の内容を見直し、実際に手を加えます。</p></li>
+      <li class="step" style="--d:1.8s"><span class="step__dot" aria-hidden="true"></span><span class="step__no">04</span><h3>確かめる</h3><p>変化を数字で確かめ、次の改善へとつなげます。</p></li>
+    </ol>
+    <p class="loop reveal"><svg width="28" height="28" viewBox="0 0 28 28" aria-hidden="true"><path d="M22 9a9 9 0 1 0 1.6 7" fill="none" stroke="#F4B942" stroke-width="1.4" stroke-linecap="round"/><path d="M22.6 3.6 22 9l-5.2-1" fill="none" stroke="#F4B942" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/></svg>確かめた結果が、次の「分析する」の火種になります。</p>
+  </div>
+</section>
+
+<!-- ===== Values ===== -->
+<section class="sec deep" id="values" data-rail aria-labelledby="valTitle">
+  <div class="wrap">
+    <div class="sh"><h2 id="valTitle">大切にしていること</h2></div>
+    <!-- 【確認事項】3項目は制作側の文案です -->
+    <ul class="values reveal">
+      <li><h3><i>i.</i>数字に正直に</h3><p>感覚だけに頼らず、データをもとに判断します。都合のよい数字だけを見ることはしません。</p></li>
+      <li><h3><i>ii.</i>ブランドらしさを守る</h3><p>短期の数字だけでなく、企業らしさが伝わる表現を大切にします。</p></li>
+      <li><h3><i>iii.</i>改善を止めない</h3><p>一度の施策で終わらせず、続けることで勢いを育てます。</p></li>
+    </ul>
+  </div>
+</section>
+
+<!-- ===== Message（草案） ===== -->
+<section class="sec msg-sec" id="message" data-rail aria-labelledby="msgTitle">
+  <!-- 【確認事項】代表メッセージは草案です。ご本人の確認・修正を経て公開してください -->
+  <div class="wrap">
+    <div class="msg reveal">
+      <h2 class="msg__title" id="msgTitle">火種は、<br>いつも数字の中に。</h2>
+      <div class="msg__body">
+        <p class="first">勢いを失ったように見えるブランドにも、火種は必ず残っています。</p>
+        <p>それは、ページの中で読まれている一文だったり、SNSで反応のあった一枚だったりします。私たちは、データの中からその火種を探します。</p>
+        <p>見つけた火花を、LP、SNS、広告へと渡していく。一つひとつは小さな改善でも、重ねていけば、ブランドはもう一度動き出します。</p>
+        <p>大きな一発を約束するのではなく、確かな火花を絶やさないこと。その積み重ねで、企業の皆さまに伴走していきます。</p>
+        <!-- 【確認事項】署名欄の氏名は会社概要に記載のため省略。役職名は仮 -->
+        <p class="msg__sign"><small>代表取締役</small><strong>新谷松 恵子</strong></p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== Company ===== -->
+<section class="sec paper" id="company" data-rail data-light aria-labelledby="coTitle">
+  <div class="wrap company-grid">
+    <div class="reveal"><div class="sh"><h2 id="coTitle">会社概要</h2></div></div>
+    <div class="reveal">
+<table class="profile"><tbody>
+  <tr><th scope="row">商号</th><td>株式会社Spark REVITAL</td></tr>
+  <!-- 【確認事項】役職名の表記（株式会社のため「代表取締役」と仮置き） -->
+  <tr><th scope="row">代表者</th><td>代表取締役　新谷松 恵子</td></tr>
+  <!-- 【確認事項】郵便番号はCSVの記載（1080071）から補記。部屋番号の表記はCSVどおり -->
+  <tr><th scope="row">所在地</th><td>〒108-0071<br>東京都港区白金台3丁目2番7</td></tr>
+  <tr><th scope="row">事業内容</th><td>WEBマーケティング<ul style="margin-top:.5em">
+    <li>データ分析に基づき改善を続けるLP運用・制作サポート</li>
+    <li>SNSを活用した企業のブランド構築・プロモーション事業</li>
+    <li>企業ニーズに合わせた広告企画・マーケティング支援</li>
+  </ul></td></tr>
+  <!-- 【確認事項】設立年月日・資本金・従業員数はCSVに無いため未掲載。確定後にコメントを外して記入
+  <tr><th scope="row">設立</th><td>　年　月</td></tr>
+  <tr><th scope="row">資本金</th><td>　万円</td></tr>
+  <tr><th scope="row">従業員数</th><td>　名</td></tr>
+  -->
+</tbody></table>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer class="footer">
+  <div class="wrap footer-in">
+    <div>
+      <a class="logo" href="#top" aria-label="株式会社Spark REVITAL トップへ"><svg width="26" height="26" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 1 L13.7 10.3 L23 12 L13.7 13.7 L12 23 L10.3 13.7 L1 12 L10.3 10.3Z" fill="#F4B942"/><circle cx="19" cy="5" r="1.3" fill="#E8643C"/></svg><span class="logo__t"><b><span>Spark</span> REVITAL</b><small>株式会社Spark REVITAL</small></span></a>
+      <p class="footer-tag">小さな火花を、次の勢いに。</p>
+    </div>
+    <nav class="footer-nav" aria-label="フッターメニュー">
+      <ul>
+      <li><a href="#concept">社名のこと</a></li>
+      <li><a href="#business">事業内容</a></li>
+      <li><a href="#process">改善の進め方</a></li>
+      <li><a href="#values">大切にしていること</a></li>
+      <li><a href="#message">代表メッセージ</a></li>
+      <li><a href="#company">会社概要</a></li>
+      </ul>
+    </nav>
+    <p class="copy">&copy; <span id="year">2026</span> 株式会社Spark REVITAL</p>
+  </div>
+</footer>
+
+<script>
+(function(){
+'use strict';
+var reduce = matchMedia('(prefers-reduced-motion: reduce)').matches;
+var y = document.getElementById('year'); if (y) y.textContent = new Date().getFullYear();
+var header = document.getElementById('header');
+function clamp(v,a,b){ return v < a ? a : (v > b ? b : v); }
+
+/* menu */
+var btn = document.getElementById('menuBtn'), nav = document.getElementById('gnav');
+function setMenu(open){
+  btn.setAttribute('aria-expanded', String(open));
+  btn.setAttribute('aria-label', open ? 'メニューを閉じる' : 'メニューを開く');
+  nav.classList.toggle('is-open', open);
+  document.body.style.overflow = open ? 'hidden' : '';
+  if (open){ var f = nav.querySelector('a'); if (f) f.focus(); }
+}
+btn.addEventListener('click', function(){ setMenu(btn.getAttribute('aria-expanded') !== 'true'); });
+nav.addEventListener('click', function(e){ if (e.target.closest('a') && nav.classList.contains('is-open')) setMenu(false); });
+document.addEventListener('keydown', function(e){ if (e.key === 'Escape' && nav.classList.contains('is-open')){ setMenu(false); btn.focus(); } });
+matchMedia('(min-width:901px)').addEventListener('change', function(m){ if (m.matches) setMenu(false); });
+
+/* hero canvas : 火花の連鎖 */
+(function(){
+  var cv = document.getElementById('heroCanvas');
+  if (!cv || !cv.getContext) return;
+  var ctx = cv.getContext('2d'); if (!ctx) return;
+  var hero = cv.parentElement;
+  var W = 0, H = 0, running = false, visible = true, raf = 0, t0 = performance.now(), last = 0;
+  var embers = [], sparks = [], links = [], mobile = false, nextAuto = 0, simT = 0, seed = 1;
+  function R(){ seed = (seed*16807) % 2147483647; return (seed - 1)/2147483646; }
+  function build(){
+    mobile = W < 760; seed = 20261004; embers = []; sparks = []; links = []; simT = 0; nextAuto = .6;
+    var gap = mobile ? 62 : 78;
+    for (var yy = gap*.5; yy < H; yy += gap*.86) for (var x = gap*.5 + ((yy/gap|0) % 2)*gap*.5; x < W; x += gap){
+      embers.push({x:x + (R() - .5)*gap*.6, y:yy + (R() - .5)*gap*.5, h:0, w:.16 + R()*.08, cd:0});
+    }
+  }
+  function emit(x, yy, n, from){
+    var near = [];
+    if (from >= 0 || n > 0){ for (var q = 0; q < embers.length; q++){ var d0 = Math.hypot(embers[q].x - x, embers[q].y - yy); if (q !== from && d0 > 20 && d0 < 170) near.push(q); } }
+    for (var i = 0; i < n && sparks.length < (mobile ? 90 : 170); i++){
+      var a, v;
+      if (near.length && R() < .8){ var tg = embers[near[Math.floor(R()*near.length)]]; a = Math.atan2(tg.y - yy, tg.x - x) + (R() - .5)*.25; v = Math.hypot(tg.x - x, tg.y - yy)/(.55 + R()*.25); }
+      else { a = R()*6.2832; v = 80 + R()*90; }
+      sparks.push({x:x, y:yy, px:x, py:yy, vx:Math.cos(a)*v, vy:Math.sin(a)*v, life:1.1 + R()*.6, age:0, from:from});
+    }
+  }
+  function step(dt){
+    simT += dt;
+    if (simT > nextAuto){
+      var lit = sparks.length;
+      if (lit < 8){ var e = embers[Math.floor(R()*embers.length)]; if (e){ emit(e.x, e.y, 4, -1); } }
+      nextAuto = simT + (simT < 2 ? 1 : 2.6);
+    }
+    for (var i = sparks.length - 1; i >= 0; i--){
+      var s = sparks[i]; s.age += dt; s.px = s.x; s.py = s.y;
+      s.vy += 10*dt; s.vx *= (1 - .25*dt); s.vy *= (1 - .25*dt);
+      s.x += s.vx*dt; s.y += s.vy*dt;
+      if (s.age > s.life || s.x < -20 || s.x > W + 20 || s.y > H + 20){ sparks.splice(i, 1); continue; }
+      for (var j = 0; j < embers.length; j++){
+        var e2 = embers[j]; if (e2.cd > 0 || j === s.from) continue;
+        var dx = e2.x - s.x, dy = e2.y - s.y;
+        if (dx*dx + dy*dy < 576){
+          e2.h = 1; e2.w = Math.min(.62, e2.w + .07); e2.cd = 3.2;
+          if (s.from >= 0) links.push({a:s.from, b:j, age:0});
+          emit(e2.x, e2.y, R() < .55 ? 2 : 1, j);
+          sparks.splice(i, 1); break;
+        }
+      }
+    }
+    embers.forEach(function(e){ e.h *= Math.exp(-dt*1.5); if (e.cd > 0) e.cd -= dt; });
+    for (var k = links.length - 1; k >= 0; k--){ links[k].age += dt; if (links[k].age > 2.2) links.splice(k, 1); }
+  }
+  function render(intro){
+    ctx.clearRect(0, 0, W, H);
+    var dim = mobile ? .75 : 1;
+    links.forEach(function(l){
+      var a = embers[l.a], b = embers[l.b], al = (1 - l.age/2.2)*.45*dim;
+      ctx.strokeStyle = 'rgba(244,185,66,' + al + ')'; ctx.lineWidth = 1;
+      ctx.beginPath(); ctx.moveTo(a.x, a.y); ctx.lineTo(b.x, b.y); ctx.stroke();
+    });
+    embers.forEach(function(e){
+      var h = e.h, a = (e.w + .7*h)*intro*dim;
+      if (h > .08){
+        var g = ctx.createRadialGradient(e.x, e.y, 0, e.x, e.y, 26*h + 6);
+        g.addColorStop(0, 'rgba(244,185,66,' + (.5*h*intro) + ')'); g.addColorStop(.5, 'rgba(232,100,60,' + (.18*h*intro) + ')'); g.addColorStop(1, 'rgba(232,100,60,0)');
+        ctx.fillStyle = g; ctx.beginPath(); ctx.arc(e.x, e.y, 26*h + 6, 0, 6.2832); ctx.fill();
+      }
+      var warm = clamp((e.w - .16)/.45, 0, 1);
+      ctx.fillStyle = 'rgba(' + Math.round(150 + 94*Math.max(h, warm)) + ',' + Math.round(140 + 45*Math.max(h, warm*.7)) + ',' + Math.round(170 - 104*Math.max(h, warm)) + ',' + clamp(a, 0, 1) + ')';
+      ctx.beginPath(); ctx.arc(e.x, e.y, 1.3 + 1.6*h + .8*warm, 0, 6.2832); ctx.fill();
+    });
+    sparks.forEach(function(s){
+      var k = 1 - s.age/s.life;
+      ctx.strokeStyle = 'rgba(255,226,160,' + (.9*k) + ')'; ctx.lineWidth = 1.4;
+      ctx.beginPath(); ctx.moveTo(s.px - (s.x - s.px)*2, s.py - (s.y - s.py)*2); ctx.lineTo(s.x, s.y); ctx.stroke();
+      ctx.fillStyle = 'rgba(255,244,214,' + k + ')'; ctx.fillRect(s.x - 1, s.y - 1, 2, 2);
+    });
+  }
+  function draw(t){
+    var dt = clamp(t - last, 0, .05); last = t;
+    step(dt); render(clamp(t/1.2, 0, 1));
+  }
+  hero.addEventListener('pointerdown', function(e){
+    if (e.target.closest('a')) return;
+    var r = cv.getBoundingClientRect(); emit(e.clientX - r.left, e.clientY - r.top, 7, -1);
+    if (!running && reduce){ for (var i = 0; i < 30; i++) step(1/30); render(1); }
+  });
+  function resize(){
+    var dpr = Math.min(window.devicePixelRatio || 1, 2);
+    W = cv.clientWidth; H = cv.clientHeight;
+    cv.width = Math.round(W*dpr); cv.height = Math.round(H*dpr);
+    ctx.setTransform(dpr, 0, 0, dpr, 0, 0);
+    build();
+  }
+  function loop(now){ if (!running) return; draw((now - t0)/1000); raf = requestAnimationFrame(loop); }
+  function start(){ if (running || reduce || !visible || document.hidden) return; running = true; last = (performance.now() - t0)/1000; raf = requestAnimationFrame(loop); }
+  function stop(){ running = false; cancelAnimationFrame(raf); }
+  function still(){ build(); for (var i = 0; i < 420; i++) step(1/30); render(1); }   /* 連鎖が広がった後の一枚 */
+  resize();
+  if (reduce) still(); else start();
+  var rt, lastW = W;
+  addEventListener('resize', function(){ clearTimeout(rt); rt = setTimeout(function(){
+    if (cv.clientWidth === lastW && Math.abs(cv.clientHeight - H) < 120 && running) return;
+    lastW = cv.clientWidth; resize(); if (!running) still(); }, 150); });
+  if ('IntersectionObserver' in window){ new IntersectionObserver(function(en){ visible = en[0].isIntersecting; visible ? start() : stop(); }).observe(hero); }
+  document.addEventListener('visibilitychange', function(){ document.hidden ? stop() : start(); });
+})();
+
+/* biz photos : 読み込み完了後に開く */
+document.querySelectorAll('.biz__media img').forEach(function(img){
+  function done(){ img.parentNode && img.parentNode.classList.add('is-loaded'); }
+  if (img.complete && img.naturalWidth) done(); else img.addEventListener('load', done, {once:true});
+});
+
+/* reveal (one-shot) */
+var targets = document.querySelectorAll('.reveal, [data-draw]');
+if ('IntersectionObserver' in window && !reduce){
+  var io = new IntersectionObserver(function(entries){
+    entries.forEach(function(en){ if (!en.isIntersecting) return; en.target.classList.add('is-in'); io.unobserve(en.target); });
+  }, {threshold:.18, rootMargin:'0px 0px -6% 0px'});
+  targets.forEach(function(t){ io.observe(t); });
+} else { targets.forEach(function(t){ t.classList.add('is-in'); }); }
+
+/* rail : 導火線 */
+var rail = document.getElementById('rail'), ash = document.getElementById('railAsh'), head = document.getElementById('railHead'), read = document.getElementById('railRead');
+var secs = Array.prototype.slice.call(document.querySelectorAll('[data-rail]')), knots = [];
+var lights = Array.prototype.slice.call(document.querySelectorAll('[data-light]'));
+function layoutKnots(){
+  knots.forEach(function(k){ k.el.remove(); }); knots = [];
+  var max = Math.max(1, document.documentElement.scrollHeight - innerHeight);
+  secs.forEach(function(s){
+    var p = clamp(s.offsetTop/max, 0, 1), el = document.createElement('i');
+    el.className = 'rail__knot'; el.style.top = (p*100) + '%'; rail.insertBefore(el, head); knots.push({p:p, el:el});
+  });
+}
+var band = document.querySelector('.band img');
+function onScroll(){
+  header.classList.toggle('is-scrolled', scrollY > 40);
+  var max = document.documentElement.scrollHeight - innerHeight;
+  var p = max > 0 ? clamp(scrollY/max, 0, 1) : 0;
+  ash.style.transform = 'scaleY(' + p + ')'; head.style.top = (p*100) + '%'; read.style.top = (p*100) + '%';
+  read.textContent = 'REVITAL ' + String(Math.round(p*100)).padStart(2, '0') + '%';
+  knots.forEach(function(k){ k.el.classList.toggle('is-passed', p >= k.p - .002); });
+  var mid = innerHeight/2;
+  rail.classList.toggle('on-light', lights.some(function(s){ var r = s.getBoundingClientRect(); return r.top < mid && r.bottom > mid; }));
+  if (band && !reduce){
+    var r = band.parentElement.getBoundingClientRect();
+    if (r.bottom > 0 && r.top < innerHeight){ var k = (r.top + r.height/2 - innerHeight/2)/innerHeight; band.style.transform = 'translateY(' + (k*-40).toFixed(1) + 'px)'; }
+  }
+}
+var ticking = false;
+addEventListener('scroll', function(){ if (!ticking){ ticking = true; requestAnimationFrame(function(){ onScroll(); ticking = false; }); } }, {passive:true});
+addEventListener('load', function(){ layoutKnots(); onScroll(); });
+addEventListener('resize', function(){ layoutKnots(); onScroll(); });
+layoutKnots(); onScroll();
+
+requestAnimationFrame(function(){ requestAnimationFrame(function(){ document.body.classList.add('is-loaded'); }); });
+})();
+</script>
+</body>
+</html>
